@@ -5,15 +5,13 @@ const imageUrls = [
     "https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
     "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
 ];
-
 const TextDiv = [
-    "Explore the world",
-    "Wild Forest",
-    "City on Winter",
-    "Mountain Cloud",
-    "Sunny Beach"
+   "Explore the world",  
+   "Wild Forest",        
+   "Sunny Beach",       
+   "City on Winter",     
+   "Mountain Cloud"    
 ];
-
 const container = document.querySelector(".container");
 const tempDom = document.createDocumentFragment();
 
