@@ -1,28 +1,40 @@
-     body{
-                margin: 0;
-                padding: 0;
-                height: 100vh;
-                width: 100vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+ 
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
 
-            .container{
-                width: 80%;
-                height: 80%;
-                display: flex;
-                gap : 10px;
-            }
-
-            .image{
-                flex: 1;
-                border-radius: 25px;
-                background-size: cover;
-                cursor: pointer;
-                transition: flex 1s ease;
-            }
-
-            .active{
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    gap:10px;
+}
+	.panel{
+		flex:1;
+		cursor:pointer;
+		transition:flex 1s ease;
+		  border-radius: 20px;
+       background-size: cover;
+       background-position: center;
+       position: relative;
+	
+	}
+	.active{
                 flex: 4;
+              
             }
+	    .img-text{
+     position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            }
+	
