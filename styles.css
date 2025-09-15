@@ -3,38 +3,42 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
- 
     display: flex;
     justify-content: center; 
     align-items: center;    
+}
 
 .container {
     width: 80%;
     height: 80%;
     display: flex;
-    gap:10px;
+    gap: 10px;
 }
-	.panel{
-		flex:1;
-		cursor:pointer;
-		transition:flex 1s ease;
-		  border-radius: 20px;
-       background-size: cover;
-       background-position: center;
-       position: relative;
-	
-	}
-	.active{
-                flex: 4;
-              
-            }
-	    .img-text{
-     position: absolute;
-    bottom: 10px;
-    left: 10px;
+
+.panel {
+    flex: 1;
+    cursor: pointer;
+    transition: flex 1s ease;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* pushes text to bottom */
+    padding: 10px;             /* space around text */
+    box-sizing: border-box;     /* include padding in panel size */
+}
+
+.active {
+    flex: 4;
+}
+
+.img-text {
     color: white;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
-            }
-	
+    white-space: normal;        /* allows wrapping */
+    word-wrap: break-word;      /* prevents overflow */
+}
+
